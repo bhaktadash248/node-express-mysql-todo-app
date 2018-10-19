@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <title>Todo app</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <link href="/assets/style.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+        <div class="container">
+          <h1>TO DO LIST</h1>
+          <p class="desc">Activities and different<strong> Things</strong></p>
+          <ol class="list">
+           <% for(var i = 0; i < todo.length; i++) {%>
+              <li><%= todo[i].item %></li>
+            <% } %>
+          </ol>
+          <input type="text" class="addItemInput" placeholder="Write something">
+          <button class="addItemButton">Add Item</button>
+        </div>
+        <section>Created by Diana</section>
+      </body>
+</html>
